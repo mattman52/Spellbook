@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|UnifrakturMaguntia');
+
+body {
+    background-image: url(wood.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color:white;
+    font-family: UnifrakturMaguntia;
+}
+
+
