@@ -7,12 +7,12 @@ const changeHeading = function(ev){
     const spellName = f.spellName.value
     const powerLevel = f.powerLevel.value
     const spellsDiv = document.querySelector('#spells')
-    const list = document.createElement("ul")
+
+    const list = document.createElement("li")
     const spellPower = document.createTextNode(spellName + ' ' +powerLevel)
     list.appendChild(spellPower)
-    document.body.appendChild(list)
+    document.querySelector("ul").appendChild(list)
     
-    //spellsDiv.innerHTML += `<li>${spellName +' ' +powerLevel}</li>`
 
 
 
