@@ -45,9 +45,15 @@ const app = {
         name: f.spellName.value,
         level: f.level.value,
       }
+
+      const item = this.renderItem(spell)
+  
+      const list = document.querySelector('#spells')
+      list.appendChild(item)
+
       inputArray.push(f.spellName.value)
-      
-      item.setAttribute('id', 'item'+i);
+
+      item.setAttribute('id','item'+i)
       const removeSpell = document.createElement('button')
       removeSpell.appendChild(document.createTextNode('remove'))
       removeSpell.setAttribute('onClick', 'delete("'+'item' +i+'")')
@@ -66,12 +72,6 @@ const app = {
             return list
         }
       })
-  
-  
-      const item = this.renderItem(spell)
-  
-      const list = document.querySelector('#spells')
-      list.appendChild(item)
 
       f.reset()
       i++
