@@ -45,6 +45,7 @@ const app = {
         name: f.spellName.value,
         level: f.level.value,
       }
+      inputArray.push(f.spellName.value)
   
       const item = this.renderItem(spell)
   
