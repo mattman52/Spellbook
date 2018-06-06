@@ -1,3 +1,5 @@
+const inputArray = []
+var i = 0
 const app = {
     init: function() {
       const form = document.querySelector('form')
@@ -48,8 +50,9 @@ const app = {
   
       const list = document.querySelector('#spells')
       list.appendChild(item)
-  
+
       f.reset()
+      i++
     },
   }
   
