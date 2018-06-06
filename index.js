@@ -46,6 +46,27 @@ const app = {
         level: f.level.value,
       }
       inputArray.push(f.spellName.value)
+      
+      item.setAttribute('id', 'item'+i);
+      const removeSpell = document.createElement('button')
+      removeSpell.appendChild(document.createTextNode('remove'))
+      removeSpell.setAttribute('onClick', 'delete("'+'item' +i+'")')
+      item.appendChild(removeSpell)
+      removeSpell.addEventListener("click",function(){
+          list.removeChild(item)
+          inputArray.pop(f.spellName.value)
+      })
+
+      const remove = document.querySelector("button.restart")
+      remove.addEventListener("click", function(){
+          try{
+              list.removeChild(item)
+          }
+        finally{
+            return list
+        }
+      })
+  
   
       const item = this.renderItem(spell)
   
