@@ -156,3 +156,7 @@ input.small {
   color: cornflowerblue;
   margin-right: 1in;
 }
+#buttonColor {
+  background-color: black;
+  color: white;
+}
