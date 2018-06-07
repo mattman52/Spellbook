@@ -141,22 +141,36 @@ input.small {
 
 .spell {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .spell .name {
   text-decoration: underline;
-  max-width: 80%;
+  width: 80%;
   overflow-x: hidden;
   text-overflow: ellipsis;
   padding-left: 0.1em;
-  margin-right: 1in;
+  white-space: nowrap;
 }
 .level {
   color: cornflowerblue;
-  margin-right: 1in;
+  padding: 0 0.25em;
 }
-#buttonColor {
-  background-color: black;
+
+button.delete {
+  background-color: #ff3333;
   color: white;
+}
+
+button.fav {
+  background-color: #F8BE3D;
+  color: black;
+}
+
+.template {
+  display: none;
+}
+
+.favorite {
+  background-color: purple ;
 }
